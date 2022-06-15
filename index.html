@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Profile</title>
+  </head>
+  <body>
+    <div class="wrapper">
+    <div class="container">
+      <form action="">
+      
+      
+           <h2>Profile</h2>
+         
+    <main>
+            <!--Photo icon, input, bucket-->
+      <div class="first">
+        <div><img id="photo" src="/images/photo.jpg" alt="user-photo" /></div>
+
+        <div>
+          <input type="url" name="adding" id="add-photo" />
+        </div>
+
+        <div>
+          <input type="button" value="delete" id="button-base" /><br />
+          <label id="sizing">Up to 1 MB (300x300 px)</label>
+        </div>
+        <br /><br />
+      </div>
+
+      <!--Name, e-mail-->
+      <div class="second">
+        <div>
+          <label for="name" class="labels">Name</label>
+          <input type="text" name="name" id="user-name" class="select"/>
+        </div>
+        <div>
+          <label for="email" class="labels">E-mail</label>
+          <input type="email" name="email" id="e-mail" class="select"/>
+        </div>
+      </div>
+
+      <!--Country, city-->
+      <div class="second">
+        <div class="labels">
+         <label for="countries"  id="countries">Country</label>
+           <select name="countries" id="country"  class="select">
+            <option value="ukraine" selected>Ukraine</option>
+            <option value="usa">USA</option>
+            <option value="germany">Germany</option>
+            <option value="spain">Spain</option>
+            <option value="moldova">Moldova</option>
+            <option value="italy">Italy</option>
+          </select>
+
+        </div>
+      
+        <div>
+          <label for="city" class="labels">City</label>
+          <input type="text" name="city" id="user-city" class="select"/>
+        </div>
+
+      </div>
+
+      <!--Zip code, phone number-->
+      <div class="second">
+        <div>
+          <label for="zip">Zip code</label>
+        <input type="text" name="zip" id="user-zip" class="select"/>
+      </div>
+        <div>
+          <label for="telefon">Phone number</label>
+        <input type="tel" name="telefon" class="select"/>
+      </div>      
+      </div>
+
+      <!--Button-->
+      <div>
+        <input type="button" value="Update" id="update" />
+      </div>
+    </main>
+
+    </form>
+  </div>
+</div>
+  </body>
+</html>
